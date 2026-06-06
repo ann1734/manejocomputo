@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#F3F4F6;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+    padding:20px;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        rgba(255,255,255,.45),
+        rgba(255,255,255,.45)
+    ),
+    url("../img/fondo_uno.png");
+
+    background-size:cover;
+    background-position:center;
+    filter:blur(7px);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:900px;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:clamp(2rem, 8vw, 4rem);
+    color:#1E3A8A;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.hero-content h2{
+    font-size:clamp(1.1rem, 4vw, 1.8rem);
+    color:#2563EB;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.hero-content p{
+    width:100%;
+    max-width:700px;
+    margin:auto;
+    color:#374151;
+    font-size:clamp(0.95rem, 2.5vw, 1.1rem);
+    line-height:1.8;
+}
+
+.hero-botones{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-principal,
+.btn-secundario{
+    text-decoration:none;
+    background:#2563EB;
+    color:white;
+    padding:14px 35px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+/* CELULARES */
+@media (max-width: 768px){
+
+    .hero{
+        padding:15px;
+    }
+
+    .hero-content{
+        padding:10px;
+    }
+
+    .hero-botones{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .btn-principal,
+    .btn-secundario{
+        width:100%;
+        max-width:300px;
+        text-align:center;
+    }
+}
