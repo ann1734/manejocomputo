@@ -1,0 +1,195 @@
+/* ===== RESET ===== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Segoe UI", sans-serif;
+    background: #f3f4f6;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.hero{
+    min-height:55vh;
+    background:#1F2937;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:30px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero-content h3{
+    font-size:5rem;
+    color:white;
+}
+
+.hero-content h2{
+    font-size:3rem;
+    color: white;
+    margin-bottom:20px;
+}
+
+.hero-content hr{
+    width:250px;
+    height:4px;
+
+    margin:20px auto;
+
+    border:none;
+    border-radius:20px;
+
+    background: white;
+}
+
+.hero-content p{
+    color:white;
+    font-size:1.1rem;
+
+    max-width:700px;
+    margin:auto;
+
+    text-align:center;
+}
+
+/* ===== SECCIONES ===== */
+
+body > div{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+/* ===== TARJETAS ===== */
+
+body > div > div{
+    background:white;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    overflow:hidden;
+    padding:50px;
+}
+
+body > div > div > div{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+/* ===== TEXTOS ===== */
+
+h1{
+    color:#2563EB;
+    margin-bottom:20px;
+    font-size:2.4rem;
+}
+
+h3{
+    color:#1E40AF;
+    margin-top:30px;
+    margin-bottom:15px;
+    font-size:1.6rem;
+}
+
+p{
+    font-size:1rem;
+    text-align:justify;
+}
+
+/* ===== IMÁGENES ===== */
+
+img{
+    width:350px;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer{
+    margin-top:80px;
+    background:#0F172A;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.footer-info h2{
+    color:white;
+    margin-bottom:15px;
+}
+
+.footer-info p{
+    text-align:center;
+    color:#CBD5E1;
+    margin-bottom:25px;
+}
+
+.footer-links{
+    margin-bottom:25px;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#38BDF8;
+}
+
+.copy{
+    text-align:center;
+    color:#94A3B8;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:900px){
+
+    .hero-content h3{
+        font-size:3rem;
+    }
+
+    .hero-content h2{
+        font-size:2rem;
+    }
+
+    body > div > div > div{
+        flex-direction:column;
+    }
+
+    img{
+        width:100%;
+        height:auto;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    body > div > div{
+        padding:30px;
+    }
+}
