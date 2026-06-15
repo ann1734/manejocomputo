@@ -172,6 +172,28 @@ body{
 
 }
 
+
+.qr-fijo{
+    position:fixed;
+
+    bottom:20px;
+    right:20px;
+
+    z-index:9999;
+}
+
+.qr-fijo img{
+    width:120px;
+    height:auto;
+
+    background:white;
+    padding:8px;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+
 /* CELULAR */
 
 @media(max-width:768px){
@@ -213,4 +235,27 @@ body{
 
 }
 
+
+/* QR adaptado */
+
+.qr-fijo{
+
+    bottom:12px;
+
+    right:12px;
+
 }
+
+.qr-fijo img{
+
+    width:75px;
+
+    padding:5px;
+
+    border-radius:8px;
+
+}
+
+
+}
+
